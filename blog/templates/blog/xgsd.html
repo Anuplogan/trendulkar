@@ -1,0 +1,220 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     
+    
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Anupam kushwaha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="{% static 'blog/css/demo.css' %}" />
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/custom.css' %}" />
+		<script type="text/javascript" src="{% static 'blog/js/modernizr.custom.79639.js' %}"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="{% static 'blog/css/styleNoJS.css' %}" />
+		</noscript>
+    </head>
+    <style>
+body {
+    background-color: #62C2F4;
+}
+</style>
+    <body>
+     
+        <h1>Hello</h1>
+       <center> <a href="https://cooltext.com"><img src="https://images.cooltext.com/4996416.png" width="471" height="158" alt="ANupam" /></a>
+</center>
+       <center> <img src="{% static 'blog/images/index.jpeg' %}" alt="Mountain View" align="middle" style="width:304px;height:228px;"></center>
+        
+        <div class="container demo-1">
+		
+			
+			</nav>
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="H"></div>
+							<h2>{{ head.0.name }}</h2>
+							<blockquote><p>{{ head.0.timestamp }}</p><cite>{{ head.0.tweet_volume }}</cite></blockquote>
+   
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>{{ head.1.name }}</h2>
+							<blockquote><p>{{ head.1.timestamp }}</p><cite>{{ head.1.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+                            <h2>{{ head.2.name }}</h2>
+							<blockquote><p>{{ head.2.timestamp }}</p><cite>{{ head.2.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="I"></div>
+							<h2>{{ head.3.name }}</h2>
+							<blockquote><p>{{ head.3.timestamp }}</p><cite>{{ head.3.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+                    <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="2" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+							<h2>{{ head.4.name }}</h2>
+							<blockquote><p>{{ head.4.timestamp }}</p><cite>{{ head.4.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+                    <div class="sl-slide bg-3" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="21" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>{{ head.5.name }}</h2>
+							<blockquote><p>{{ head.5.timestamp }}</p><cite>{{ head.5.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+                    <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="21" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>{{ head.6.name }}</h2>
+							<blockquote><p>{{ head.6.timestamp }}</p><cite>{{ head.6.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+					
+					
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="t"></div>
+							<h2>{{ head.7.name }}</h2>
+							<blockquote><p>{{ head.7.timestamp }}</p><cite>{{ head.7.tweet_volume }}</cite></blockquote>
+						</div>
+					</div>
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+                    <span></span>
+                    <span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/4996410.png" width="424" height="155" alt="ANupam" /></a>
+<br />Image by <a href="https://cooltext.com">Cool Text: Logo and Button Generator</a> - <a href="https://cooltext.com/Edit-Logo?LogoID=2545976827">Create Your Own Logo</a>
+        </div>
+    <a href="https://cooltext.com"><img src="https://images.cooltext.com/4996410.png" width="424" height="155" alt="ANupam" /></a>
+<br />Image by <a href="https://cooltext.com">Cool Text: Logo and Button Generator</a> - <a href="https://cooltext.com/Edit-Logo?LogoID=2545976827">Create Your Own Logo</a>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'blog/js/jquery.ba-cond.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'blog/js/jquery.slitslider.js' %}"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+    <a href="https://cooltext.com"><img src="https://images.cooltext.com/4996410.png" width="424" height="155" alt="ANupam" /></a>
+<br />Image by <a href="https://cooltext.com">Cool Text: Logo and Button Generator</a> - <a href="https://cooltext.com/Edit-Logo?LogoID=2545976827">Create Your Own Logo</a>
+	</body>
+</html>

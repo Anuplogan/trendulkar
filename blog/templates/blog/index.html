@@ -1,0 +1,319 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anupam</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'blog/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+    <style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    color: #EA2C5A;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #EA2C5A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(240, 20, 73, 0.96);
+}
+
+</style>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url=('/static/blog/images/demo/backgrounds/01.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="fl_left">
+        <ul>
+          <li><i class="fa fa-phone"></i> +91 888 384 0000</li>
+          <li><i class="fa fa-envelope-o"></i> kanupam500@gmail.com</li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul>
+          <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="#Q2">About</a></li>
+          <li><a href="#Q1">Register</a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Twitter Trends</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <li>
+          <article>
+            <p>Trending #1</p>
+            <h3 class="heading">{{ head.0.name }}</h3>
+            <blockquote><p>{{ head.0.timestamp }}</p><cite>{{ head.0.tweet_volume }}</cite></blockquote>
+            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #2</p>
+            <h3 class="heading">{{ head.1.name }}</h3>
+            <blockquote><p>{{ head.1.timestamp }}</p><cite>{{ head.1.tweet_volume }}</cite></blockquote>
+            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #3</p>
+            <h3 class="heading">{{ head.2.name }}</h3>
+              <blockquote><p>{{ head.2.timestamp }}</p><cite>{{ head.2.tweet_volume }}</cite></blockquote>            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #4</p>
+            <h3 class="heading">{{ head.3.name }}</h3>
+              <blockquote><p>{{ head.3.timestamp }}</p><cite>{{ head.3.tweet_volume }}</cite></blockquote>            
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>Trending #5</p>
+            <h3 class="heading">{{ head.4.name }}</h3>
+              <blockquote><p>{{ head.4.timestamp }}</p><cite>{{ head.4.tweet_volume }}</cite></blockquote>            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #6</p>
+            <h3 class="heading">{{ head.5.name }}</h3>
+              <blockquote><p>{{ head.5.timestamp }}</p><cite>{{ head.5.tweet_volume }}</cite></blockquote>            
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>Trending #7</p>
+            <h3 class="heading">{{ head.6.name }}</h3>
+              <blockquote><p>{{ head.6.timestamp }}</p><cite>{{ head.6.tweet_volume }}</cite></blockquote>            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #8</p>
+            <h3 class="heading">{{ head.7.name }}</h3>
+            <blockquote><p>{{ head.7.timestamp }}</p><cite>{{ head.7.tweet_volume }}</cite></blockquote>
+            
+          </article>
+        </li>
+          <li>
+          <article>
+            <p>Trending #9</p>
+            <h3 class="heading">{{ head.8.name }}</h3>
+            <blockquote><p>{{ head.8.timestamp }}</p><cite>{{ head.8.tweet_volume }}</cite></blockquote>
+            
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h3 id="Q2" class="heading">About</h3>
+      <p class="nospace">Hi there!! 
+My name is Anupam Kushwaha. I'm from Nanpara, 20 years old; I studied all my life there, but now I live in Lucknow  with severe weather almost all the year!!</p>
+    </div>
+    <ul class="nospace group center">
+      <li class="one_third first">
+        <article><a class="inverse" href="#"><i class="btmspace-30 icon fa fa-expand"></i></a>
+          <h6 class="heading font-x1">Who Am I</h6>
+            <p>No superheroes here, just another ordinary soul in pursuit of happiness.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="inverse" href="#"><i class="btmspace-30 icon fa fa-headphones"></i></a>
+          <h6 class="heading font-x1">Where I'm From</h6>
+          <p>Right now I live in Lucknow but I grew up outside of Bahraich.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a class="inverse" href="#"><i class="btmspace-30 icon fa fa-history"></i></a>
+          <h6 class="heading font-x1">4 Words</h6>
+          <p>| Dreamer |  Foodie | Introvert | Reader |</p>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded" style="background-image:url('/static/blog/images/demo/backgrounds/gf.jpg');">
+  <div class="hoc split clear">
+    <section> 
+      <!-- ################################################################################################ -->
+      <h2 class="heading">About</h2>
+      <p class="btmspace-50"></p>
+      <article><a href="#"><i class="icon fa fa-odnoklassniki"></i></a>
+        <h6 class="heading font-x1">Hobbies</h6>
+        <p>I love to brainstorm new  ideas, work on self improvement, or learn about new things. <br>
+            I'm a web and graphics designer. Designing is my passion and I have been working on various designing projects.
+
+
+</p>
+      </article>
+      <article><a href="#"><i class="icon fa fa-object-ungroup"></i></a>
+        <h6 class="heading font-x1">Quote</h6>
+        <p> I like seeing different parts of the world. There's no better inspiration for my work than the human element.</p>
+      </article>
+      <article><a href="#"><i class="icon fa fa-signing"></i></a>
+        <h6 class="heading font-x1">Happy2Help</h6>
+        <p>Please feel free to contact me in case that you need anything. Hope to meet you soon! <br> <br>
+
+Good luck!!</p>
+      </article>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper coloured">
+  <article class="hoc cta clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="three_quarter first">Check out my other works</h6>
+    <footer class="one_quarter"><a class="btn" href="https://www.quora.com/profile/Anupam-Kushwaha-6">The best answer to any question &raquo;</a></footer>
+    <!-- ################################################################################################ -->
+  </article>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+    
+    <div class="wrapper row4 bgded overlay" style="background-image:url('/static/blog/images/demo/backgrounds/11.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1>Say hi to me on these social networks:</h1>
+
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/anupam.logan"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com/Logan7410"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-quora" href="https://www.quora.com/profile/Anupam-Kushwaha-6"><i class="fa fa-quora"></i></a></li>
+        <li><a class="faicon-instagram" href="https://www.instagram.com/k.anupamm/"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Contact Me</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+         Near Jagdishwari Mandir, Mo.Hasanganj, Nanpara 271865
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 888 384 0000</li>
+        <li><i class="fa fa-fax"></i> +91 344 577 368</li>
+        <li><i class="fa fa-envelope-o"></i> kanupam500@gmail.com.com</li>
+      </ul>
+    </div>
+     <div class="one_third" id="Q1">
+      <h6 class="heading">Get in Touch</h6>
+      <div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">SriLanka</option>
+      <option value="usa">Nepal</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'blog/layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'blog/layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'blog/layout/scripts/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'blog/layout/scripts/jquery.flexslider-min.js' %}"></script>
+</body>
+</html>
